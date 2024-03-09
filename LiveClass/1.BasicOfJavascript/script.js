@@ -337,8 +337,11 @@ console.log(arrays); // [1, 29, 3,4,5,6]
 
 //  ------ array properties
 
-// 1. push
+// 1. push -> adding the element in the last.
 
+const arr = [1, 2, 3, 4];
+
+/*
 const arr = [1, 2, 3, 4];
 
 const newLengthOfArr = arr.push(5);
@@ -354,3 +357,265 @@ const anuj = {
 };
 
 console.log(a);
+
+*/
+
+// 2. POP -> removing the element from the last
+
+/*
+console.log(arr, "original array");
+const popedValue = arr.pop();
+console.log(popedValue, "popped value");
+console.log(arr, "array after popping");
+
+*/
+
+// this is IN-Place: we are NOT creating a NEW ARRAY.
+
+// 3. SHIFT -> removing the element from the start.
+/*
+console.log(arr, "before shift");
+const shifedValue = arr.shift();
+console.log(shifedValue, "shifted val");
+console.log(arr, "after shift");
+*/
+
+// 4. Unshift -> add elements in the start of the array
+console.log(arr, "before shift");
+const newLengthOFArr = arr.unshift(1);
+console.log(newLengthOFArr, "new length");
+console.log(arr, "after shift");
+
+// -------------------------- PARSING IN JAVASCRIPT ---------------------
+
+/*
+  Travveling the JS file is in 2 parts 
+  1. PARSING PHASE -> only FUNCITON AND VARIABLE DECLARATION.
+  2. EXECUTION PHASE -> everything EXECPT PARSING. (assignment, logging)
+*/
+
+/*
+  When EXECUTOR SEE FUNCTION EXECUTION: 
+  1. There is a creation of new execution context (FEC).
+  2. Wait for the answer to come after the Fucntion execution 
+*/
+
+/*
+  When an EXECUTOR sees RETURN keyword.
+  1. TOPMOST EC(execution context) is deleted.
+  2. its value is given to the box which is below.
+*/
+
+// EXAMPLE1:
+// var a = 12;
+
+// var a; // (Declaration )
+// a = 12; // Assignment
+
+// console.log(a); // 12
+
+// EXAMPLE 2:
+
+/*
+console.log(a, "xample 2");
+
+var a = 100;
+
+
+*/
+
+// answer : undefined xample 2
+
+//  ------------------------------ Hoisting -----------------------------
+
+/*
+  Variable Declarations and Fucntion Declaration are HOISted. 
+
+  Hoisting means to bring variable and function declaration to top.
+*/
+
+/*
+const result = sum(1, 2);
+console.log(result);
+
+console.log(a);
+
+function sum(a, b) {
+  return a + b;
+}
+
+var a = 99;
+
+// Asnwer : 3, undefined.
+
+*/
+
+//  ----------------------------- BAsic Operations (Assignment, Operator)------------------------
+
+/*
+console.log(1 + 20); // 21
+
+console.log(Math.pow(2, 3)); // 8
+
+// Modolus ... % .
+
+console.log(101 % 3); // 2
+
+console.log(5 % 2); // 1
+
+console.log(10 % 2); // 0
+
+*/
+
+//  ------------------- Comparisions ------------------
+
+/*
+console.log(1 > 2); // false;
+console.log(1 < 2); // true;
+
+console.log(1 <= 2); // true
+console.log(1 >= 2); // false;
+
+console.log(1 == 2); // false
+console.log(1 != 2); // true
+
+console.log("1" == 1); // true
+
+//  ===, !==
+
+console.log(1 === 2); // false
+console.log(1 !== 2); // true
+console.log("1" === 1); // false
+
+*/
+
+// === and !== CHECK THE TYPES ALSO and the value.
+
+// --------------------------- Basic Programming ---------------
+
+// -------------- Conditions:
+
+// 1.  if - else
+// if (money) {
+// then do this true part
+// iphone
+// } else {
+// if your consdition is false
+// cheap chinese phone.
+// }
+
+// TERNARY OPERATOR.
+
+//  (condition) ?  buy iphone : cheap chinese phone.
+
+// 2. switch statement
+
+/*
+switch (condition) {
+  case 1:
+    console.log(1);
+    break;
+
+  case 2:
+    console.log(2);
+    break;
+
+  default:
+    console.log("apart from value 1 and 2");
+    break;
+}
+
+*/
+
+//  -------------------- Loops -------------------
+
+// let arr = [12, 19, 18, 4, 6, 9];
+
+// let lengthOfArray = arr.length; // 6
+
+// 1. for Loop;
+
+/*
+for (let i = 0; i < lengthOfArray; i++) {
+  const item = arr[i];
+  console.log(item);
+}
+*/
+
+// 2. while loop
+
+/*
+let i = 0;
+while (i < lengthOfArray) {
+  console.log(arr[i], "while loop");
+
+  i++;
+}
+
+*/
+
+// 3. for In - (KEYS )
+// for in loop is for the Objects({}, []) and its Properties. (Object keys )
+
+/*
+const obj = {
+  name: "utklasrh",
+  class: 12,
+  address: "delhi",
+};
+
+for (const key in obj) {
+  const value = obj[key];
+  console.log(key + " : " + value);
+}
+*/
+
+// let arr = [12, 18, 19, 63, 4, 1];
+
+/*
+for (const key in arr) {
+  // const value = arr[key];
+  console.log(key + " : " + arr[key]);
+}
+
+console.log(arr);
+*/
+
+// 4. For Of -> (VALUES)
+// ITERABLE OBJECTS -> Arrays are by default iterable objects.
+// IF your object has Symbol(Symbol.iterator) then your OBJECT IS ITERABLE OBJECT.
+
+/*
+for (const item of arr) {
+  console.log(item, "for of loop");
+}
+*/
+
+/*
+
+Object are not ITERABLE (by default) so for of Loop will not work here.
+
+let obj = {
+  name: "utkarsh",
+  class: 12,
+};
+for (const item of obj) {
+  console.log(item, "for of loop");
+}
+
+*/
+
+//  ------------------------ ADVANCE PARTS OF VARIABLE ------------------
+
+/*
+let name = "abcd";
+var a = 12;
+
+function abc() {
+  var a = 99;
+}
+
+abc();
+// name, abc,  a is part of GEC (Global Execution context)
+
+*/
