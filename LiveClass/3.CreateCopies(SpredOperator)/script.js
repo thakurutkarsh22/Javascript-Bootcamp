@@ -38,7 +38,7 @@ console.log(newArray === arr);
 
 */
 
-// ------- COPIES WAY 2 : spread operator ...
+// ------- COPIES WAY 2 : spread operator ... (SHallow COpy)
 
 /*
 const arr = [1, 2, 3, 4, 5]; // abc@123
@@ -53,3 +53,28 @@ console.log(copyArr === arr);
 */
 
 // ----------------- DEEp copy and SHallow COpy -----------------
+
+const person = {
+  name: "arun",
+  class: 12,
+  address: {
+    street: "road 44",
+    pincode: 110044,
+    houseNumber: "3233-c",
+  },
+};
+
+const copyPerson = { ...person }; // SHALLOW COPY
+copyPerson.name = "utkarsh";
+copyPerson.address.pincode = 999999;
+
+console.log(person, "person");
+console.log(copyPerson, "copy Person");
+
+// TRICK
+
+const copyPerson2 = JSON.parse(JSON.stringify(person)); // DEEP COPY
+
+copyPerson2.address.pincode = 11111;
+
+console.log(copyPerson2, "copy person 2");

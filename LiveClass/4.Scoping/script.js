@@ -204,3 +204,19 @@ if (true) {
 console.log(a);
 
 // Answer: 99 12 99
+
+// EXAMPLE 2:
+/*
+function greet(name = "kk") {
+  console.log(`Hello, ${name}!`);
+}
+greet(undefined); // nathan 
+
+function greet(name = "Nathan") {
+  console.log(`Hello, ${name}!`);
+}
+greet(undefined); // nathan
+
+greet(null) // null
+
+*/
