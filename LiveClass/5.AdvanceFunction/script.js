@@ -222,3 +222,5 @@ var abc = () => {
 };
 
 abc(); // hello.
+
+// TODO: optional chaining.
