@@ -77,6 +77,8 @@
   INLINE ELEMENTS
   1. a
   2. img
+  3. span
+  4. u, i, b -> underline , italics, bold
 
 */
 
