@@ -1,0 +1,138 @@
+/* ------------ **** BASIC Selector  **** ------------ */
+
+/* -- Tag selector ----- */
+
+/* h1 {
+  color: red;
+}
+
+p {
+  color: aqua;
+} */
+
+/* ------ ID Selector ---- */
+
+/* #hello {
+  background-color: brown;
+  color: blue;
+}
+
+#bye {
+  background-color: aqua;
+} */
+
+/* ------- CLass Selector ----- */
+/* .cricket {
+  background-color: red;
+}
+
+.tennis {
+  background-color: yellow;
+} */
+
+/* .brandAmbassador {
+  background-color: chartreuse;
+} */
+
+/* ------------ **** Combinator Selector  **** ------------ */
+
+/*------  1. DECENDENT  ------- */
+/* .article p {
+  background-color: red;
+} */
+
+/* -------2. Child (>)------- */
+
+/* .article > p {
+  background-color: green;
+} */
+
+/*------- 3. adjacent sibling (+) -------*/
+
+/* Question: select all the paragraphs which are adjacent to article :::: (REMEmber we are looking in siblings only) */
+
+/* .article + p {
+  background-color: blue;
+} */
+
+/*------- 4. General Sibling Selector (~)------- */
+
+/* .article ~ p {
+  background-color: blue;
+} */
+
+/* div ~ p {
+  background-color: blue;
+}
+
+.article ~ .para {
+  background-color: blue;
+} */
+
+/* ******* -----------------  Pseudo CLASS Selectors  ******** --------------- */
+
+/* Syntax - 
+selector:pseudoClass {
+
+}
+
+*/
+
+/* Any non visited link will be converted to YELLo */
+/* #sqilco:link {
+  color: yellow;
+} */
+
+/* any visited link will be converted to purple */
+
+/* #google:visited {
+  color: lightblue;
+} */
+
+/* any link that you hover should be converted to brown */
+
+/* #google:hover {
+  color: blueviolet;
+} */
+
+/* a:hover {
+  color: violet;
+} */
+
+/* a:active {
+  color: chartreuse;
+} */
+
+/* ******* ----------------- Attribute Selectors  ******** --------------- */
+
+/* 
+1. If we want to check the value is starting from some string
+Syntax
+[attribute^=value]
+
+
+*/
+
+[class^="sport"] {
+  background-color: red;
+}
+
+/*
+2. If we want to check the value is starting from last of a string.
+Syntax 
+[attribute$=value]
+
+
+*/
+
+[class$="sport"] {
+  background-color: yellow;
+}
+
+/*
+3. If we want to check the value is in the string.
+Syntax 
+[attribute*=value]
+*/
+
+/* ******* -----------------PSEUDO ELEMENT Selectors  ******** --------------- * */

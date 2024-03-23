@@ -5,7 +5,7 @@
 
 // ------------------------- CSS SELECTORS -------------------
 
-//--------- Direct/Basic Selectors  -----
+// 1. --------- Direct/Basic Selectors  -----
 
 // 1. Tag Selector
 // h1 {}
@@ -16,3 +16,5 @@
 
 // 3. class selector
 // .className {}
+
+// 2. ------------------------- Combination/Combinator SELECTOR ------------------

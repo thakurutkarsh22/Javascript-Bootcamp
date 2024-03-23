@@ -78,3 +78,6 @@ const copyPerson2 = JSON.parse(JSON.stringify(person)); // DEEP COPY
 copyPerson2.address.pincode = 11111;
 
 console.log(copyPerson2, "copy person 2");
+
+// TODO: see inputs
+// TODO: see why JSON.parse(JSON.stringify(person)); is kind of BAD

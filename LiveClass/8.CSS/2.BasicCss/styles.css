@@ -1,0 +1,53 @@
+/* 1. Border */
+
+.container {
+  /* border-width: 1px;
+  border-color: black;
+  border-style: solid; */
+
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* 2. Margin : are space outside of the BORDER  */
+.container {
+  margin: 50px;
+
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 11px;
+  margin-bottom: 12px;
+}
+
+/* 3. Padding : Spacing around the content but inside the BORDER. */
+
+.container {
+  padding: 10px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* 4. Colors  */
+
+.container {
+  color: yellow;
+  /* background-color: red; */
+  background-color: #710102;
+
+  /* max */
+  background-color: rgb(255, 255, 255);
+  /* min */
+  background-color: rgb(0, 0, 0);
+
+  /* alpha: transparent/paardarshita  */
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* 5. Box Model  */
+
+/* 6. Positions */
+
+/* 7. Z -index */
