@@ -1,0 +1,132 @@
+/* NOTE: by default the CSS width and height property is for the CONTENT */
+/* CONTENT BOX */
+/* 
+  1. the main width and height is given to the CONTENT ONLY 
+  2. the other things (padding and border) adds up in the element.
+
+*/
+
+/* .container {
+  width: 90px;
+  height: 60px;
+} */
+
+/* .container {
+  box-sizing: content-box;
+
+
+  height: 50px;
+  width: 60px;
+
+  border: 5px solid black;
+  margin: 200px;
+  padding: 10px;
+} */
+
+/* TASK 1: Calculate the total Width of the element  */
+/* TASK 2: Calculate the total Height of the element  */
+
+/* Answer */
+/* 90 80 */
+
+/*
+.container {
+  height: 50px;
+  width: 60px;
+
+  border: 5px solid black;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+*/
+
+/* TASK 3: Calculate the total Width of the element  */
+/* TASK 4: Calculate the total Height of the element  */
+
+/* 80 60  */
+
+/*
+.container {
+  height: 50px;
+  width: 60px;
+
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  padding-top: 3px;
+}
+*/
+
+/* TASK 5: Calculate the total Width of the element  */
+/* TASK 6: Calculate the total Height of the element  */
+/* 58, 75 */
+
+/* ------------ BORDER BOX  --------------- */
+
+/* 
+    1. Content  + padding + border :  would be the width and height.
+*/
+
+/* .container {
+  box-sizing: border-box;
+
+  height: 50px;
+  width: 60px;
+
+  border: 5px solid black;
+  margin: 10px;
+  padding: 10px;
+} */
+
+/* TOTAL WIDTH OF ELEMENT => 60px */
+/* TOTAL HEIGHT OF ELEMENT => 50px */
+
+/* TASK 1: Calculate the total Width of the content  */
+/* TASK 2: Calculate the total Height of the content  */
+
+/* .container {
+  box-sizing: border-box;
+
+  height: 50px;
+  width: 60px;
+
+  border: 10px solid black;
+  margin: 10px;
+  padding: 10px;
+} */
+/* TOTAL WIDTH OF ELEMENT => 60px */
+/* TOTAL HEIGHT OF ELEMENT => 50px */
+
+/* TASK 3: Calculate the total Width of the content  */
+/* TASK 4: Calculate the total Height of the content  */
+/* 20 10 */
+
+/* .container {
+  box-sizing: border-box;
+
+  height: 50px;
+  width: 60px;
+
+  border: 10px solid black;
+  margin: 10px;
+} */
+
+/* TOTAL WIDTH OF ELEMENT => 60px */
+/* TOTAL HEIGHT OF ELEMENT => 50px */
+
+/* TASK 3: Calculate the total Width of the content  */
+/* TASK 4: Calculate the total Height of the content  */
+
+/* 40 30 */
+
+/* WHY USE BORDER BOXING INSTEAD OF CONTENT BOXING */
+
+/*
+  border box the Element size DOSNT change.
+
+  content box the ELEMENT size will change.
+
+
+*/

@@ -2,7 +2,20 @@
 
 // 2. Margin and Padding
 
-// 3. Box model
+// 3. -------- Box model ----------
+
+/*
+    Content 
+    Padding 
+    Border 
+    Margin
+
+
+
+    // container -> TOTAL LENGTH ; TOTAL HEIGHT
+
+
+*/
 
 // 4. Color
 

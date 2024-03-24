@@ -1,0 +1,34 @@
+/*  1. ABSOLUTE Units */
+
+/* .container {
+  width: 10cm;
+  height: 10cm;
+
+  border: 2px solid black;
+} */
+
+/* 2. Relative Units */
+/* width will work bec of limited real estate  */
+/* height will not work in this Context of body bec (infinite real estate) */
+/* 
+.container {
+ 
+  width: 50%;
+  height: 50%;
+  border: 2px solid black;
+} */
+
+.twentyfive_vh {
+  height: 25vh;
+  background-color: red;
+}
+
+.fifty_vw {
+  width: 50vw;
+  background-color: aqua;
+}
+
+.parent {
+  width: 50%;
+  background-color: pink;
+}
