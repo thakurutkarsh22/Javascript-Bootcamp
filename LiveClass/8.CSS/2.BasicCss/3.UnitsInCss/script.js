@@ -21,3 +21,5 @@
 // 1. Font related sizes -> em ,rem, etc.
 // 2. ViewPort -> vh, vw, etc.. (vh -> view height, vw -> view width)
 // 3. Parent Relative Length -> %
+
+// TODO: what is outline used for

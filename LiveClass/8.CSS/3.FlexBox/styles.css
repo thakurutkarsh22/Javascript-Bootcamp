@@ -1,0 +1,70 @@
+.container {
+  height: 300px;
+  padding: 10px;
+  background-color: violet;
+  border: 1px solid black;
+
+  display: flex;
+  /* I want to set MAIN AXIS : How your elemetnts will be placed*/
+  flex-direction: row; /*  DEFAULT */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column-reverse; */
+  /* flex-direction: column; */
+
+  /* Wrap: Make items in next line if they are not fitting. */
+  flex-wrap: wrap;
+
+  /* Justify content: Items Along MAIN AXIS */
+
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+
+  /* align items: Items Along Cross AXIS */
+  align-items: flex-end;
+  align-items: center;
+
+  /* gap: talks about the GAp Between the two items.
+ */
+
+  gap: 50px;
+}
+
+.child {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+
+  background-color: orange;
+}
+
+.child2 {
+  /* width: 100px; */
+  flex-grow: 2;
+  align-self: flex-end;
+}
+
+nav {
+  background: red;
+  padding: 10px;
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Sureity that all the li in NAV only that is efffected */
+nav ul li {
+  list-style: none;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.navItems {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
